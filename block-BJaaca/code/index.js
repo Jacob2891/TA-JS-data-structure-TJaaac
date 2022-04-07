@@ -2,6 +2,8 @@
 
 //  - Create a variable named `character` using `let` assign a value of empty object.
 
+let character = {};
+
 //  - Go to this [Arya Stark](https://awoiaf.westeros.org/index.php/Arya_Stark)
 
 //  Re-assign the value of `character` variable to and object with the key `characterName` and value of "Arya"

@@ -11,15 +11,15 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr2`
-- `arr === arr2`
+- [10] === [10] // false , reason being two arrays are created at different addresses , hence they are not same 
+- What is the value of obj? //{ surname: 'Stark' } / the current value replaced the prior value 'Arya'
+- obj == newObj // false
+- obj === newObj // false
+- user === newObj //false
+- user == newObj // false
+- user == obj // true
+- arr == arr2 // true
+- arr === arr2 // true
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
@@ -36,6 +36,8 @@ var person2 = personDetails(person1);
 console.log(person1);
 console.log(person2);
 ```
+ANS- 1. { name: 'Alex', age: 30 }
+     2. { name: 'John', age: 50 } // I understood , since the default parameter value is { name: 'John', age: 50 } , whatever we enter the output is default value , as the code is not using parameter to compute anything else . PLease correct me if iam wrong.
 
 3. What will be the output of the below code:
 
@@ -46,6 +48,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); // true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
